@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #fafafa;
+    max-height: 100vh;
+    max-width: 100vw;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.clock {
+    width: 300px;
+    height: 300px;
+    margin-top: 10rem;
+    background-color: #252525;
+    border-radius: 50%;
+    border: 10px solid #999;
+    box-shadow: 0 5px 15px #252525;
+    position: relative;
+}
+.clock .number {
+    --rotation: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotate(var(--rotation));
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: silver;
+    text-align: center;
+}
+.clock .number.number-1 {
+    --rotation: 30deg;
+}
+.clock .number.number-2 {
+    --rotation: 60deg;
+}
+.clock .number.number-3 {
+    --rotation: 90deg;
+}
+.clock .number.number-4 {
+    --rotation: 120deg;
+}
+.clock .number.number-5 {
+    --rotation: 150deg;
+}
+.clock .number.number-6 {
+    --rotation: 180deg;
+}
+.clock .number.number-7 {
+    --rotation: 210deg;
+}
+.clock .number.number-8 {
+    --rotation: 240deg;
+}
+.clock .number.number-9 {
+    --rotation: 270deg;
+}
+.clock .number.number-10 {
+    --rotation: 300deg;
+}
+.clock .number.number-11 {
+    --rotation: 330deg;
+}
+.clock .hand {
+    position: absolute;
+    background-color: silver;
+    bottom: 50%;
+    left: 50%;
+    z-index: 1;
+    transform-origin: bottom;
+    border-radius: 10px;
+}
+.clock .second-hand {
+    width: 1px;
+    height: 45%;
+    background-color: red;
+}
+.clock .minute-hand {
+    width: 5px;
+    height: 40%;
+    background-color: silver;
+}
+.clock .hour-hand {
+    width: 5px;
+    height: 30%;
+    background-color: silver;
+}
+.center-dot {
+    position: absolute;
+    bottom: calc(50% - 4px);
+    left: calc(50% - 4px);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    z-index: 2;
+}
+@media only screen and (min-width: 500px) {
+    .clock {
+        width: 350px;
+        height: 350px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .clock {
+        margin-top: 8rem;
+        width: 400px;
+        height: 400px;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .clock {
+        margin-top: 5rem;
+        width: 500px;
+        height: 500px;
+    }
+}
+@media only screen and (min-width: 1280px) {
+    .clock {
+        margin-top: 3rem;
+        width: 600px;
+        height: 600px;
+    }
+}
