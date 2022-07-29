@@ -28,9 +28,9 @@ A simple analogic watch.
 ![](https://via.placeholder.com/500x300.png?text=Meu+Aplicativo)
 
 ### Live Site
-To see the site click on button who says **NETLIFY**
+To see the site click on button:
 
-[![Site](https://img.shields.io/badge/Netlify-20232a?style=for-the-badge&logo=netlify&logoColor=white)](https://streaming-site.netlify.app)
+[![Site](https://img.shields.io/badge/Live-Site-20232a?style=for-the-badge)](https://josafamarengo.github.io/watch)
 
 
 ## License:
